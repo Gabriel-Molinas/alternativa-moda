@@ -9,11 +9,11 @@ function loadApp() {
     duration: 1000,
     // Magazine width
 
-    width: 922,
+    width: 1022,
 
     // Magazine height
 
-    height: 600,
+    height: 700,
 
     // Elevation will move the peeling corner this number of pixels by default
 
@@ -33,7 +33,7 @@ function loadApp() {
 
     // The number of pages
 
-    pages: 5,
+    pages: 122,
 
     // Events
     when: {

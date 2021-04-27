@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  background-color: #e6e6ea;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+//divider
+.divider {
+  /* minor cosmetics */
+  display: table;
+  font-size: 24px;
+  text-align: center;
+  width: 75%; /* divider width */
+  margin: 40px auto; /* spacing above/below */
+  span {
+    display: table-cell;
+    position: relative;
+  }
+  span:first-child,
+  span:last-child {
+    width: 50%;
+    top: 18px; /* adjust vertical align */
+    -moz-background-size: 100% 2px; /* line width */
+    background-size: 100% 2px; /* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+  }
+  span:first-child {
+    /* color changes in here */
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      from(transparent),
+      to(#000)
+    );
+  }
+  span:nth-child(2) {
+    color: #000;
+    padding: 0px 5px;
+    width: auto;
+    white-space: nowrap;
+  }
+  span:last-child {
+    /* color changes in here */
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      from(#000),
+      to(transparent)
+    );
+  }
+}
+
+.card {
+  cursor: pointer;
+
+  .card-header {
+    //padding: 250px;
+    height: 340px;
+  }
+}
