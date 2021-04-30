@@ -65,4 +65,93 @@ body {
   position: absolute;
   margin-top: 420px;
   color: gray;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-left: 3px;
+  position: relative;
+}
+
+.carousel__container {
+  white-space: nowrap;
+  margin: 20px 0px;
+  padding-bottom: 10px;
+}
+
+.carousel-item {
+  background-color: peru;
+  width: 231px;
+  height: 300px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  opacity: 0.6;
+  position: relative;
+}
+
+.carousel-item:hover ~ .carousel-item {
+  transform: translate3d(50px, 0, 0);
+}
+
+.carousel-item:hover .carousel-item {
+  opacity: 0.1;
+}
+
+.carousel:hover .carousel-item:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.carousel-item__img {
+  width: 231px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-item__details {
+  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 40%);
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.carousel-item__details img {
+  width: 20px;
+  padding-bottom: 60px;
+}
+
+.carousel-item__details:hover {
+  opacity: 0.8;
+}
+
+.carousel-item__details--title {
+  position: absolute;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.carousel-item__details--subtitle {
+  position: absolute;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 12px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */
