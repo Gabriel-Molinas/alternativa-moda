@@ -53,4 +53,16 @@ body {
 }
 .card .card-header {
   height: 340px;
+  transition: 300ms;
+  background-size: 100% 100%;
+}
+.card .card-header:hover {
+  transition: 500ms;
+  opacity: 0.6;
+  background-size: 120% 120%;
+}
+.card .card-event {
+  position: absolute;
+  margin-top: 420px;
+  color: gray;
 }/*# sourceMappingURL=styles.css.map */
