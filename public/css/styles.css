@@ -8,6 +8,14 @@ body {
   grid-template-columns: 25% 25% 25% 25%;
 }
 
+.header__img {
+  display: flex;
+  justify-content: center;
+}
+.header__img img {
+  width: 50%;
+}
+
 .divider {
   /* minor cosmetics */
   display: table;

@@ -6,6 +6,15 @@ body {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }
+// Header-img
+.header__img {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 50%;
+  }
+}
 //divider
 .divider {
   /* minor cosmetics */
