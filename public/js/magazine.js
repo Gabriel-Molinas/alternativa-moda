@@ -170,7 +170,7 @@ function resizeViewport() {
   $(".magazine-viewport")
     .css({
       width: width,
-      height: height,
+      height: height / 1.2,
     })
     .zoom("resize");
 
