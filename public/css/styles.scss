@@ -12,11 +12,26 @@ body {
   justify-content: center;
 
   img {
-    width: 50%;
+    width: 1000px;
+  }
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+  padding: 0 450px;
+  button {
+    border-width: 0px;
+    font-size: 15px;
+    background-size: 100% 10%;
   }
 }
 //magazine
 .magazine-viewport {
+  p {
+    position: relative;
+    text-align: center;
+    top: 763px;
+  }
   .container {
     position: absolute;
     top: 50%;
@@ -31,7 +46,55 @@ body {
     left: -461px;
     top: -300px;
   }
+  .previous-button,
+  .next-button {
+    width: 65px;
+    height: 550px;
+    position: absolute;
+    top: 74px;
+  }
+  .previous-button-hover,
+  .next-button-hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .previous-button-hover,
+  .previous-button-down {
+    background-image: url(/pics/arrows.png);
+    background-position: 3px 284px;
+    background-repeat: no-repeat;
+  }
+  .previous-button-down,
+  .next-button-down {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .next-button-hover,
+  .next-button-down {
+    background-image: url(/pics/arrows.png);
+    background-position: -3px 284px;
+    background-repeat: no-repeat;
+  }
+  .zoom-in .next-button,
+  .zoom-in .previous-button {
+    display: none;
+  }
+  .next-button {
+    right: -40px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+  }
+  .previous-button {
+    left: -40px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+  }
 }
+
 //divider
 .divider {
   /* minor cosmetics */
