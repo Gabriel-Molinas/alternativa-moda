@@ -65,7 +65,14 @@
       >
         Ediciones anteriores
       </button>
-      <button type="button" class="btn btn-outline-primary">login</button>
+      <button
+        type="button"
+        class="btn btn-outline-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#loginButton"
+      >
+        login
+      </button>
     </div>
 
     <br /><br /><br />
@@ -443,46 +450,72 @@
       <div class="go-top-button"></div>
     </div>
 
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      Launch demo modal
-    </button>
-
     <!-- Modal -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="loginButton"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="loginButton"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+          <div
+            class="modal-header"
+            style="display: flex; justify-content: center"
+          >
+            <h5 class="modal-title" id="exampleModalLabel">login</h5>
           </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="modal-body">
+            <!-- form -->
+            <form action="">
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label mt-4"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="form-label mt-4"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <div
+                class="m-1"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  flex-direction: column-reverse;
+                "
+              >
+                <a href="">Olvide mi contraseña</a>
+                <p>No tiene una cuenta? <a href="">suscribete</a></p>
+                <div style="display: flex; justify-content: end">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
           </div>
+          <div class="modal-footer"></div>
         </div>
       </div>
     </div>

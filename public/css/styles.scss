@@ -55,6 +55,7 @@ body {
   }
   .previous-button-hover,
   .next-button-hover {
+    transition: 350ms;
     background-color: rgba(0, 0, 0, 0.2);
   }
   .previous-button-hover,
