@@ -14,14 +14,21 @@ document.querySelector("#notaEditorial").addEventListener("click", () => {
 
 document.querySelector("#exposiciones").addEventListener("click", () => {
   window.scrollTo({
-    top: 2100,
+    top: 3700,
+    behavior: "smooth",
+  });
+});
+
+document.querySelector("#notaDestacada").addEventListener("click", () => {
+  window.scrollTo({
+    top: 2900,
     behavior: "smooth",
   });
 });
 
 document.querySelector("#edicionesAnteriores").addEventListener("click", () => {
   window.scrollTo({
-    top: 3200,
+    top: 2100,
     behavior: "smooth",
   });
 });

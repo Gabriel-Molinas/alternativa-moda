@@ -18,7 +18,7 @@ body {
 .btn-group {
   display: flex;
   justify-content: center;
-  padding: 0 450px;
+  padding: 0 350px;
   button {
     border-width: 0px;
     font-size: 15px;
@@ -265,7 +265,7 @@ body {
     transition: 0.2s;
     top: 50%;
     left: 50%;
-    transform: translate(50%, 50%);
+    transform: translate(-25%, 50%);
     z-index: -1;
   }
 }
