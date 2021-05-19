@@ -292,4 +292,55 @@ body {
     width: 4.6rem;
     height: 4.6rem;
   }
+}
+.planes {
+  border: none;
+}
+.planes h1 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.589);
+}
+.planes ul {
+  padding-top: 20px;
+}
+.planes li {
+  font-size: 20px;
+  decoration: none;
+}
+.planes li:before {
+  content: "✔️";
+  margin-left: -20px;
+  margin-right: 10px;
+}
+.planes .card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planes .card-footer button {
+  margin-right: 15px;
+  z-index: 1;
+}
+.planes .card-footer a {
+  margin-left: 15px;
+  z-index: 1;
+}
+
+.border-effect {
+  width: 380px;
+  height: 355px;
+  border: 1px solid black;
+  transform: rotate(5deg);
+  position: absolute;
+  z-index: 0;
+  margin-left: 6px;
+  margin-top: -3px;
+}
+
+.subs-grid {
+  display: grid;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 33% 33% 33%;
+  margin: 0 17%;
 }/*# sourceMappingURL=styles.css.map */

@@ -296,3 +296,56 @@ body {
     height: 4.6rem;
   }
 }
+.planes {
+  border: none;
+  h1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.589);
+  }
+  h2 {
+  }
+  ul {
+    padding-top: 20px;
+  }
+  li {
+    font-size: 20px;
+    decoration: none;
+  }
+  li:before {
+    content: "✔️";
+    margin-left: -20px;
+    margin-right: 10px;
+  }
+  .card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      margin-right: 15px;
+      z-index: 1;
+    }
+    a {
+      margin-left: 15px;
+      z-index: 1;
+    }
+  }
+}
+.border-effect {
+  width: 380px;
+  height: 355px;
+  border: 1px solid black;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  transform: rotate(5deg);
+  position: absolute;
+  z-index: 0;
+  margin-left: 6px;
+  margin-top: -3px;
+}
+.subs-grid {
+  display: grid;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 33% 33% 33%;
+  margin: 0 17%;
+}
