@@ -1,0 +1,38 @@
+[
+  {
+    "_Usuario": 1,
+    "id": 765624584,
+    "nickname": "TETE7841767",
+    "password": "qatest9161",
+    "site_status": "active",
+    "email": "test_user_27904956@testuser.com"
+  },
+  {
+    "_Usuario": 2,
+    "id": 765628692,
+    "nickname": "TETE2804325",
+    "password": "qatest4562",
+    "site_status": "active",
+    "email": "test_user_99299867@testuser.com"
+  },
+  {
+    "id": "2c9380847981e6b00179aa21d1730e78",
+    "back_url": "https://www.mercadopago.com.ar",
+    "collector_id": 765624584,
+    "application_id": 8595322041427471,
+    "reason": "Plan Pase Mensual Gold",
+    "status": "active",
+    "date_created": "2021-05-26T15:23:33.619-04:00",
+    "last_modified": "2021-05-26T15:23:33.619-04:00",
+    "init_point": "https://www.mercadopago.com/mla/debits/new?preapproval_plan_id=2c9380847981e6b00179aa21d1730e78",
+    "sandbox_init_point": "https://sandbox.mercadopago.com/mla/debits/new?preapproval_plan_id=2c9380847981e6b00179aa21d1730e78",
+    "auto_recurring": {
+      "frequency": 1,
+      "frequency_type": "months",
+      "transaction_amount": 1100,
+      "currency_id": "ARS",
+      "repetitions": 12,
+      "free_trial": { "frequency": 1, "frequency_type": "months" }
+    }
+  }
+]
